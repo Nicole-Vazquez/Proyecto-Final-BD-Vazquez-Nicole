@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio:</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e5ff; /* Fondo suave morado */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #8e24aa; /* Color morado para el título */
+            margin-bottom: 20px;
+        }
+        .container {
+            background: #fff;
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding: 20px; /* Padding interior */
+            max-width: 800px; /* Ancho máximo */
+            width: 100%; /* Asegura que use todo el espacio posible */
+            text-align: center;
+            transition: transform 0.3s; /* Transición suave */
+        }
+        .container:hover {
+            transform: translateY(-5px); /* Efecto hover */
+        }
+        .container p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    
+    <h1>Bienvenido a Skywalker PetLife Vet Care</h1>
+    <main class="container">
+        <p>“Skywalker PetLife Vet Care: En nuestra clínica veterinaria, te ofrecemos un espacio donde tus mascotas reciben el cuidado digno de una galaxia muy, muy lejana. Regístrate con nosotros para poder generar citas de manera fácil y obtener la mejor atención médica para tus peludos amigos. ¡Únete a nuestra familia galáctica y deja que la fuerza del cuidado y el amor por las mascotas te acompañe!”.
+        </p>
+    </main>
+    <script>
+        // Cargar el navbar
+        fetch('/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el navbar:', error));
+    </script>
+</body>
+</html>
+

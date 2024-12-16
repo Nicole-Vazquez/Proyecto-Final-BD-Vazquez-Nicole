@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mascotas</title>
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0e5ff; /* Fondo suave morado */
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    h1 {
+        color: #8e24aa; /* Color morado para el título */
+        margin-bottom: 20px;
+    }
+
+    form {
+        background: #ffffff; /* Fondo blanco para el formulario */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px; /* Ancho del formulario */
+        text-align: left; /* Alinear texto a la izquierda */
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #6a1b9a; /* Color morado más oscuro para las etiquetas */
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #8e24aa; /* Borde morado */
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 15px;
+        background: #8e24aa; /* Fondo del botón morado */
+        color: #ffffff; /* Color del texto */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        transition: background 0.3s; /* Transición suave para el fondo */
+    }
+
+    button:hover {
+        background: #ab47bc; /* Color de fondo al pasar el mouse */
+    }
+
+    .back-button {
+        margin-top: 20px;
+        background: #35424a; /* Fondo del botón de volver */
+        color: #ffffff; /* Color del texto */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        padding: 10px 15px;
+        transition: background 0.3s; /* Transición suave para el fondo */
+    }
+
+    .back-button:hover {
+        background: #506471; /* Color de fondo al pasar el mouse */
+    }
+  </style>
+</head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Cargar Mascotas desde Excel</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="excelFile" accept=".xlsx" />
+    <button type="submit">Subir Archivo</button>
+  </form>
+  <button onclick="window.location.href='/download'">Descargar Mascotas</button>
+  <button onclick="window.history.back()">Volver</button>
+  <script>
+    document.addEventListener('keydown', function (event) {
+      if ((event.ctrlKey || event.metaKey) && event.key === 's') {
+        event.preventDefault(); 
+        const link = document.createElement('a');
+        link.href = '/download'; 
+        link.download = 'mascotas.xlsx'; 
+        link.click(); 
+      }
+    });
+  </script>
+  
+  
+</body>
+</html>

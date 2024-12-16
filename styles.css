@@ -1,0 +1,144 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Color de texto */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo del encabezado */
+header {
+    background: #5e35b1; /* Morado oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #7e57c2; /* Morado más claro al pasar el mouse */
+    border-radius: 5px;
+}
+
+/* Estilo del contenido principal */
+main {
+    padding: 20px;
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+}
+
+/* Estilo de formularios */
+form {
+    display: flex;
+    flex-direction: column; /* Para apilar los elementos verticalmente */
+    margin: 20px 0; /* Espacio alrededor del formulario */
+    padding: 20px; /* Espacio interno */
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+form label {
+    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+form input {
+    padding: 10px; /* Espacio interno en los campos de entrada */
+    margin-bottom: 15px; /* Espacio debajo de cada campo */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+form button {
+    padding: 10px; /* Espacio interno en el botón */
+    background: #5e35b1; /* Morado oscuro */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background 0.3s; /* Transición suave para el fondo */
+}
+
+form button:hover {
+    background: #7e57c2; /* Morado más claro al pasar el mouse */
+}
+
+/* Estilo de tablas */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 20px 0; /* Espacio alrededor de la tabla */
+}
+
+th, td {
+    padding: 10px; /* Espacio interno en celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+th {
+    background: #5e35b1; /* Morado oscuro */
+    color: #ffffff; /* Color del texto del encabezado */
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2; /* Fondo gris claro para filas pares */
+}
+
+tr:hover {
+    background: #d1c4e9; /* Morado muy claro al pasar el mouse sobre la fila */
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #5e35b1; /* Morado oscuro */
+    color: #ffffff; /* Texto blanco */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
