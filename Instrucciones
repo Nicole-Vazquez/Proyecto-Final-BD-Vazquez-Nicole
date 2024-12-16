@@ -1,5 +1,5 @@
 1.MySQL
-Empezamos con la creación de la base de datos de nuestro proyecto y sus tablas:
+Empezamos con la creación de la base de datos de nuestro proyecto y cada tabla:
 CREATE DATABASE petlife;
 Seleccionamos la base de datos creada:
 USE petlife;
