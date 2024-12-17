@@ -49,7 +49,7 @@ CREATE TABLE usuarios (
   tipo_usuario ENUM('admin', 'veterinario', 'cliente') NOT NULL
 );
 ```
-###Tabla codigos_acceso
+*Tabla codigos_acceso
 ```sql
 CREATE TABLE codigos_acceso (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -57,14 +57,14 @@ CREATE TABLE codigos_acceso (
   tipo_usuario ENUM('admin', 'veterinario', 'cliente') NOT NULL
 );
 ```
-###Insertar roles de usuario
+*Insertar roles de usuario
 ```sql
 INSERT INTO codigos_acceso (codigo, tipo_usuario) VALUES
   ('admin', 'admin'),
   ('vete', 'veterinario'),
   ('cliente', 'cliente');
 ```
-###Tabla mascotas
+*Tabla mascotas
 ```sql
 CREATE TABLE mascotas (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -76,7 +76,7 @@ CREATE TABLE mascotas (
   propietario VARCHAR(255) NOT NULL
 );
 ```
-###Tabla veterinarios
+*Tabla veterinarios
 ```sql
 CREATE TABLE veterinarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -85,7 +85,7 @@ CREATE TABLE veterinarios (
   numero_contacto VARCHAR(15) NOT NULL
 );
 ```
-###Tabla citas
+*Tabla citas
 ```sql
 CREATE TABLE citas (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -97,7 +97,7 @@ CREATE TABLE citas (
   FOREIGN KEY (veterinario_id) REFERENCES veterinarios(id)
 );
 ```
-###Tabla pagos
+*Tabla pagos
 ```sql
 CREATE TABLE pagos (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -109,7 +109,7 @@ CREATE TABLE pagos (
   FOREIGN KEY (mascota_id) REFERENCES mascotas(id)
 );
 ```
-###Tabla servicios
+*Tabla servicios
 ```sql
 CREATE TABLE servicios (
   id INT AUTO_INCREMENT PRIMARY KEY,
