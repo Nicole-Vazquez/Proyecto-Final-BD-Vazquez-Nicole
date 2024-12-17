@@ -1,5 +1,6 @@
 1. Archivos JSON
 Para instalar los tres archivos en tu proyecto Node.js, debes seguir estos pasos:
+
 ● Crear un archivo package.json: Si aún no tienes un archivo package.json, crea uno con el
 siguiente comando en tu terminal:
   npm init -y
