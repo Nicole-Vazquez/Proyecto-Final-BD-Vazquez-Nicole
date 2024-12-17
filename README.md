@@ -1,4 +1,4 @@
-### Instalación y Configuración del Proyecto Node.js y MySQL###
+### Instalación y Configuración del Proyecto Node.js y MySQL
 
 1. Archivos JSON
 
@@ -10,7 +10,7 @@ npm init -y
 ```
 Este comando crea un archivo package.json con la configuración predeterminada.
 
-###Crear y configurar nodemon.json
+Crear y configurar `nodemon.json`
 Crea un archivo llamado nodemon.json en la raíz de tu proyecto y añade tu configuración personalizada:
 
 ```json
@@ -21,13 +21,13 @@ Crea un archivo llamado nodemon.json en la raíz de tu proyecto y añade tu conf
   "exec": "node server.js"
 }
 ```
-###Instalar dependencias necesarias
+Instalar dependencias necesarias
 Ejecuta el siguiente comando para instalar paquetes clave utilizados en la aplicación:
 
 ```bash
 npm install express mysql2 dotenv multer xlsx nodemon bcrypt
 ```
-2. ##Configuración de la Base de Datos MySQL##
+2. Configuración de la Base de Datos ` MySQL `
 
 Crear la base de datos
 Ejecuta la siguiente instrucción en tu cliente MySQL:
@@ -35,12 +35,12 @@ Ejecuta la siguiente instrucción en tu cliente MySQL:
 ```sql
 CREATE DATABASE petlife;
 ```
-###Seleccionar la base de datos
+Seleccionar la base de datos
 ```sql
 USE petlife;
 ```
-####Crear tablas:####
-Tabla usuarios
+Crear tablas:
+*Tabla usuarios
 ```sql
 CREATE TABLE usuarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
