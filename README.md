@@ -1,6 +1,6 @@
 ### Instalación y Configuración del Proyecto Node.js y MySQL###
 
-1. ##Archivos JSON##
+1. Archivos JSON
 
 ### Crear un archivo `package.json`  
 Si aún no tienes un archivo `package.json`, crea uno con el siguiente comando en tu terminal:
