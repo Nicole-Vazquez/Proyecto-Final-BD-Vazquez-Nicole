@@ -14,7 +14,6 @@ Este comando crea un archivo package.json con la configuración predeterminada.
 Crea un archivo llamado nodemon.json en la raíz de tu proyecto y añade tu configuración personalizada:
 
 ```json
-Copy code
 {
   "watch": ["src"],
   "ext": "js,json",
@@ -41,7 +40,7 @@ CREATE DATABASE petlife;
 USE petlife;
 ```
 ####Crear tablas:####
-###Tabla usuarios
+Tabla usuarios
 ```sql
 CREATE TABLE usuarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
