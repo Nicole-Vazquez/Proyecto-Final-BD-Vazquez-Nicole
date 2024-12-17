@@ -21,7 +21,7 @@ y añade tu configuración personalizada:
 descargue varios paquetes que se utilizan para diferentes propósitos en una aplicación Node.js:
   npm install express mysql2 dotenv multer xlsx nodemon bcrypt
 
-2.MySQL
+2. MySQL
 Empezamos con la creación de la base de datos de nuestro proyecto y cada tabla:
   CREATE DATABASE petlife;  
 Seleccionamos la base de datos creada:
